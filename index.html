@@ -23,11 +23,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button onclick="fun5()" class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
             </div>
         </div>
     </nav>
@@ -145,20 +141,7 @@
             showNotes();
         }
 
-        let search = document.getElementById('searchTxt');
-        let inputval = search.value;
-        function fun5() {
-            let notecard = document.getElementsByClassName('notecard');
-            Array.from(notecard).forEach(function (element) {
-                let cardtxt = element.getElementsByTagName('p')[0].innerText;
-                if (cardtxt.includes(inputval)) {
-                    element.style.display = 'block';
-                }
-                else {
-                    element.style.display = 'none';
-                }
-            })
-        }
+        
 
     </script>
 </body>
